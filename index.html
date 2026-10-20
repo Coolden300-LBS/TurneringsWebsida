@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- define language so that web browser can better understand and maybe suggest a translation -->
+
+<!-- 
+define some of the websites main things like charset, relative page size to device,
+website tab name and link to CSS
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Verity E-sports | Tournament Results</title>
+
+    <link rel="icon" href="Assets/logo.png"> <!-- it's called favicon !!! -->
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- content goes here -->
+<body>
+
+    <!-- top section with logo, general navigation, login and search across website (fakeeee) -->
+    <header>
+
+        <!-- had to create a wrapper here -->
+        <div id="header_sub">
+            
+            <!-- left side-->
+            <div id="header_left">
+                <!-- wrap logo in a link so that it can be clicked -->
+                <a id="top_logo" href="fake404/index.html">
+                    <img src="Assets/logo.png" alt="Verity E-sports logo" style="height: 100%;">
+                </a>
+
+                <!-- general navigation -->
+                <nav id="general_navigation">
+                    <a href="fake404/index.html">Latest Results</a>
+                    <a href="fake404/index.html">All Tournaments</a>
+                    <a href="fake404/index.html">Best Players</a>
+                </nav>
+            </div>
+
+            <!-- right side -->
+            <div id="header_right">
+                <div id="search_bar">
+                    <img src="Assets/search.png">
+                    <input type="text" placeholder="Search...">
+                </div>
+
+                <!-- account -->
+                <button id="sign_in">
+                    <img src="Assets/sign_in.png">
+                    <div> Sign in </div>
+                </button>
+            </div>
+        </div>
+
+        <div id="quick_navigation">
+            <a href="#main_results">Results</a>
+            <a href="#main_matches">Matches</a>
+            <a href="#main_rules">Rules</a>
+        </div>
+    </header>
+
+    <!-- main content of the website -->
+    <main>
+        <!-- main tournament name -->
+        <h1>
+            LBS Gacha PvP tournament (2026)
+            <a href="https://lbs.se/">
+                <img src="Assets/lbs.png" alt="LBS Kreativa Gymnasiet (link)">
+            </a>
+        </h1>
+
+        <span class="separator"></span>
+
+        <!-- 
+        sections are easier to use cause they are, well, 
+        MEANT to devide content into sections, and for i 
+        dont have to use both classes to apply margin top thing
+        along with id
+        -->
+        <section id="main_results">
+            <h2>Tournament Results</h2>
+
+            <table>
+                <colgroup> <!-- manually specify width of table columns! nifty feature -->
+                    <col style="width: 10%;">
+                    <col style="width: 40%;">
+                </colgroup>
+
+                <thead> <!-- thead contains "template" variables in head to refer what other values mean -->
+                    <tr>
+                        <th>Place</th>
+                        <th>Team name</th>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                        <th>Total score</th>
+                    </tr>
+                </thead>
+
+                <tbody id="main_results_tableContent">
+                    <!-- I decided to fill this section with help of JavaScript! -->
+                </tbody>
+            </table>
+        </section>
+
+        <span class="separator"></span>
+
+        <section id="main_matches">
+            <h2>Tournament Matches</h2>
+
+            <table>
+                <colgroup>
+                    <col style="width: 5%;">
+                    <col style="width: auto;">
+                    <col style="width: 10%;">
+                    <col style="width: 5%">
+                    <col style="width: 10%;">
+                    <col style="width: auto;">
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th style="text-align: right;">Team 1</th>
+                        <th>Score</th>
+                        <th>vs</th>
+                        <th>Score</th>
+                        <th style="text-align: left;">Team 2</th>
+                    </tr>
+                </thead>
+
+                <tbody id="main_matches_log">
+                    <!-- filled with JavaScript once again -->
+                </tbody>
+            </table>
+        </section>
+
+        <span class="separator"></span>
+
+        <section id="main_rules">
+            <h2>Tournament Rules</h2>
+
+            <table>
+                <colgroup>
+                    <col style="width: 5%;">
+                    <col style="width: auto;">
+                </colgroup>
+
+                <tbody id="main_rules_list">
+                    <!-- im too lazy to fills this in manually -->
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- tbm -->
+    <footer>
+        <div id="footer_main">
+            <a href="fake404/index.html">
+                <img src="Assets/logo.png">
+            </a>
+
+            <div>
+                <h3>More</h3>
+                <ul>
+                    <li> <a href="fake404/index.html">About us</a> </li>
+                    <li> <a href="fake404/index.html">Work with us</a> </li>
+                    <li> <a href="fake404/index.html">Advertising</a> </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact us</h3>
+                <ul>
+                    <li> <a href="fake404/index.html">support@verityEsports.com</a> </li>
+                    <li> <a href="fake404/index.html">+46 70 555 01 47</a> </li>
+                    <li> <a href="fake404/index.html">Turneringsgatan (7123 45), Stockholm, Sweden</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="copyrights">
+            <div>
+                Coolden300
+                <span style="margin: 0 5px 0 5px;">|</span>
+                All rights reserved 2026
+            </div>
+
+            <div>
+                <a href="fake404/index.html">Privacy</a>
+                <span style="margin: 0 5px 0 5px;">|</span>
+                <a href="fake404/index.html">Terms</a>
+                <span style="margin: 0 5px 0 5px;">|</span>
+                <a href="fake404/index.html">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+<!-- 
+we add JavaScript the last one so that it executes only after the page is loaded.
+I tried to add it in the head, but it loaded before the content, and therefore
+it couldnt locate table element and fill in the teams and stuff.
+-->
+<script src="results_filler.js"></script>
+<script src="log_filler.js"></script>
+<script src="rule_filler.js"></script>
+</body>
+</html>

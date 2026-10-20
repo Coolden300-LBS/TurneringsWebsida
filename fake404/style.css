@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("../Assets/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    font-family: 'Roboto Condensed', 'Trebuchet MS', Arial, sans-serif;
+
+    display: flex;
+    margin-top: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
